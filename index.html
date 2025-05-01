@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adology Sidebar</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="layout-container">
+      <div class="sidebar">
+        <div class="inner-container">
+          <!-- Header -->
+          <div class="header">
+            <div class="logo-section">
+              <img src="./img/Logo.png" alt="Logo" />
+              <span class="logo-text">ADOLOGY</span>
+            </div>
+            <div class="header_icons">
+              <img src="./img/bell.png" alt="Bell Icon" />
+              <img src="./img/man.png" alt="Profile Icon" />
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Menu Section -->
+
+          <div class="menu-section">
+            <!-- Dropdown Button -->
+            <button class="dropdown-button" onclick="toggleDropdown()">
+              <div class="dropdown-title">
+                <img src="./img/nadira.png" alt="Nadira Icon" />
+                <span>Nadira Sleep</span>
+              </div>
+
+              <img
+                id="dropdown-arrow"
+                src="./img/down-arrow.png"
+                alt="Arrow Icon"
+              />
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div id="dropdown-menu" class="dropdown-menu hidden">
+              <button>Profile 1</button>
+              <button>Profile 2</button>
+              <button>Profile 3</button>
+            </div>
+
+            <!-- Other Menu Buttons -->
+            <button class="menu-btn white">
+              <img src="./img/home.png" alt="Brands Icon" />
+              <span>Brands</span>
+            </button>
+
+            <button class="menu-btn">
+              <img src="./img/search.png" alt="Search Icon" />
+              <span>Inspire</span>
+            </button>
+
+            <button class="menu-btn">
+              <img src="./img/trend.png" alt="Market Icon" />
+              <span>Market Intelligence</span>
+            </button>
+
+            <button class="menu-btn">
+              <img src="./img/ad.png" alt="Ad Spend Icon" />
+              <span>Ad Spend</span>
+            </button>
+
+            <button class="menu-btn">
+              <img src="./img/incognito.png" alt="Track Icon" />
+              <span>Track Brand</span>
+            </button>
+
+            <button class="menu-btn">
+              <img src="./img/module.png" alt="Module Icon" />
+              <span>Brief Module</span>
+            </button>
+
+            <div class="divider"></div>
+
+            <button class="menu-btn">
+              <img src="./img/setting.png" alt="Settings Icon" />
+              <span>Setting</span>
+            </button>
+
+            <button class="menu-btn">
+              <img src="./img/user.png" alt="Invite Icon" />
+              <span>Invite</span>
+            </button>
+
+            <!-- Pro Access Card -->
+            <div class="pro-card">
+              <div class="pro-text">
+                <div class="pro-title">Become a Pro Access</div>
+                <div class="pro-subtext">
+                  Try your experience for using more features
+                </div>
+              </div>
+              <button class="pro-button">Upgrade to Pro</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+
+      <div class="main-content">
+        <div class="top-bar">
+          <button class="top-btn white">
+            <img src="./img/search_black.png" alt="Search Icon" />
+            <span>Explore</span>
+          </button>
+
+          <button class="top-btn dark">
+            <img src="./img/trend.png" alt="Trends Icon" />
+            <span>Trends</span>
+          </button>
+
+          <button class="recommend-btn">
+            <img src="./img/like.png" alt="Thumbs Up Icon" />
+            <span class="recommend-text">Recommendations</span>
+          </button>
+
+          <button class="top-btn dark wide">
+            <img src="./img/diskette.png" alt="Saved Icon" />
+            <span>Saved Ads</span>
+          </button>
+        </div>
+        <div class="tab-bar">
+          <div class="tab active">
+            <span class="tab-text active-text">For You</span>
+          </div>
+          <div class="tab">
+            <span class="tab-text">Add Library</span>
+          </div>
+        </div>
+
+        <!-- Card Container -->
+        <div class="card-container">
+          <div class="card">
+            <!-- Header -->
+            <div class="card-header">
+              <div class="card-title">Following</div>
+              <div class="percent-box">
+                <img src="./img/green.png" alt="Green" class="icon-small" />
+                <div class="percent-text">5,789%</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="card-content">
+              <div class="campaign-text">
+                5,824 Fresh Campaigns from this Brand Group
+              </div>
+
+              <div class="brand-list">
+                <!-- Brand: Nectar Sleep -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img/nectar.png"
+                      alt="Nectar"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Nectar sleep</div>
+                      <div class="brand-subtext">1,718 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <img
+                      src="./img/incog.png"
+                      alt="Competitor"
+                      class="icon-small"
+                    />
+                    <span>Competitor</span>
+                  </div>
+                </div>
+
+                <!-- Brand: Purple -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img/nectar.png"
+                      alt="Purple"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Purple</div>
+                      <div class="brand-subtext">2,643 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <img
+                      src="./img/purple.png"
+                      alt="Competitor"
+                      class="icon-small"
+                    />
+                    <span>Competitor</span>
+                  </div>
+                </div>
+
+                <!-- Brand: Casper -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img/purple.png"
+                      alt="Casper"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Casper</div>
+                      <div class="brand-subtext">1,564 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag followed">
+                    <img
+                      src="./img//green.png"
+                      alt="Followed"
+                      class="icon-small"
+                    />
+                    <span>Followed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <!-- Header -->
+            <div class="card-header">
+              <div class="card-title">Following</div>
+              <div class="percent-box">
+                <img src="./img/green.png" alt="Green" class="icon-small" />
+                <div class="percent-text">5,789%</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="card-content">
+              <div class="campaign-text">
+                5,824 Fresh Campaigns from this Brand Group
+              </div>
+
+              <div class="brand-list">
+                <!-- Brand: Nectar Sleep -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img/nectar.png"
+                      alt="Nectar"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Nectar sleep</div>
+                      <div class="brand-subtext">1,718 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <img
+                      src="./img//incog.png"
+                      alt="Competitor"
+                      class="icon-small"
+                    />
+                    <span>Competitor</span>
+                  </div>
+                </div>
+
+                <!-- Brand: Purple -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img/purple.png"
+                      alt="Purple"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Purple</div>
+                      <div class="brand-subtext">2,643 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <img
+                      src="./img/incog.png"
+                      alt="Competitor"
+                      class="icon-small"
+                    />
+                    <span>Competitor</span>
+                  </div>
+                </div>
+
+                <!-- Brand: Casper -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img//purple.png"
+                      alt="Casper"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Casper</div>
+                      <div class="brand-subtext">1,564 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag followed">
+                    <img
+                      src="./img/incog.png"
+                      alt="Followed"
+                      class="icon-small"
+                    />
+                    <span>Followed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <!-- Header -->
+            <div class="card-header">
+              <div class="card-title">Following</div>
+              <div class="percent-box">
+                <img src="./img/green.png" alt="Green" class="icon-small" />
+                <div class="percent-text">5,789%</div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="card-content">
+              <div class="campaign-text">
+                5,824 Fresh Campaigns from this Brand Group
+              </div>
+
+              <div class="brand-list">
+                <!-- Brand: Nectar Sleep -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img/nectar.png"
+                      alt="Nectar"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Nectar sleep</div>
+                      <div class="brand-subtext">1,718 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <img
+                      src="./img/incog.png"
+                      alt="Competitor"
+                      class="icon-small"
+                    />
+                    <span>Competitor</span>
+                  </div>
+                </div>
+
+                <!-- Brand: Purple -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img/nectar.png"
+                      alt="Purple"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Purple</div>
+                      <div class="brand-subtext">2,643 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag">
+                    <img
+                      src="./img/incog.png"
+                      alt="Competitor"
+                      class="icon-small"
+                    />
+                    <span>Competitor</span>
+                  </div>
+                </div>
+
+                <!-- Brand: Casper -->
+                <div class="brand-row">
+                  <div class="brand-info">
+                    <img
+                      src="./img/green.png"
+                      alt="Casper"
+                      class="brand-logo"
+                    />
+                    <div class="brand-text">
+                      <div class="brand-name">Casper</div>
+                      <div class="brand-subtext">1,564 new adds</div>
+                    </div>
+                  </div>
+                  <div class="tag followed">
+                    <img
+                      src="./img/incog.png"
+                      alt="Followed"
+                      class="icon-small"
+                    />
+                    <span>Followed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- secondary cards  -->
+
+        <div class="secondary-card-container">
+          <div class="sec-card-cont-text">
+            <img class="secondary_card_img" src="./img/trophy.png" alt="" />
+            Proven Winners
+          </div>
+
+          <div class="secondary-card-wrapper">
+            <div class="sec-card">
+              <div class="header-icon">
+                <div class="header-container">
+                  <div class="right-header">
+                    <img class="img" src="./img/nectar.png" alt="logo" />
+                    <h3 class="header-text">Nectar</h3>
+                  </div>
+                  <div class="header_content">
+                    <img src="./img/trophy_green.png" alt="" />
+                    <p>Proven Winners</p>
+                  </div>
+                </div>
+              </div>
+
+              <img class="header_content_image" src="./img/img1.png" alt="" />
+              <div class="sec-card-footer">
+                <div class="footer-links">
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="link1"
+                    target="_blank"
+                    >www.nectarsleep.com</a
+                  >
+                  <button
+                    href="https://www.nectarsleep.com"
+                    class="shopnow-btn"
+                    target="_blank"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+                <div class="footer-dropdown">
+                  <img src="./img/plus.png" alt="" />
+                  <p class="footer_dropdown_p">Save to Inspiration</p>
+                  <img src="./img/arrowdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="sec-card">
+              <div class="header-icon">
+                <div class="header-container">
+                  <div class="right-header">
+                    <img class="img" src="./img/nectar.png" alt="logo" />
+                    <h3 class="header-text">Nectar</h3>
+                  </div>
+                  <div class="header_content">
+                    <img src="./img/trophy_green.png" alt="" />
+                    <p>Proven Winners</p>
+                  </div>
+                </div>
+              </div>
+
+              <img class="header_content_image" src="./img/pic3.png" alt="" />
+              <div class="sec-card-footer">
+                <div class="footer-links">
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="link1"
+                    target="_blank"
+                    >www.nectarsleep.com</a
+                  >
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="shopnow-btn"
+                    target="_blank"
+                    >Shop Now</a
+                  >
+                </div>
+                <div class="footer-dropdown">
+                  <img src="./img/plus.png" alt="" />
+                  <p class="footer_dropdown_p">Save to Inspiration</p>
+                  <img src="./img/arrowdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="sec-card">
+              <div class="header-icon">
+                <div class="header-container">
+                  <div class="right-header">
+                    <img class="img" src="./img/nectar.png" alt="logo" />
+                    <h3 class="header-text">Nectar</h3>
+                  </div>
+                  <div class="header_content">
+                    <img src="./img/trophy_green.png" alt="" />
+                    <p>Proven Winners</p>
+                  </div>
+                </div>
+              </div>
+
+              <img class="header_content_image" src="./img/pic2.png" alt="" />
+              <div class="sec-card-footer">
+                <div class="footer-links">
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="link1"
+                    target="_blank"
+                    >www.nectarsleep.com</a
+                  >
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="shopnow-btn"
+                    target="_blank"
+                    >Shop Now</a
+                  >
+                </div>
+                <div class="footer-dropdown">
+                  <img src="./img/plus.png" alt="" />
+                  <p class="footer_dropdown_p">Save to Inspiration</p>
+                  <img src="./img/arrowdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="sec-card">
+              <div class="header-icon">
+                <div class="header-container">
+                  <div class="right-header">
+                    <img class="img" src="./img/nectar.png" alt="logo" />
+                    <h3 class="header-text">Nectar</h3>
+                  </div>
+                  <div class="header_content">
+                    <img src="./img/trophy_green.png" alt="" />
+                    <p>Proven Winners</p>
+                  </div>
+                </div>
+              </div>
+
+              <img class="header_content_image" src="./img/img1.png" alt="" />
+              <div class="sec-card-footer">
+                <div class="footer-links">
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="link1"
+                    target="_blank"
+                    >www.nectarsleep.com</a
+                  >
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="shopnow-btn"
+                    target="_blank"
+                    >Shop Now</a
+                  >
+                </div>
+                <div class="footer-dropdown">
+                  <img src="./img/plus.png" alt="" />
+                  <p class="footer_dropdown_p">Save to Inspiration</p>
+                  <img src="./img/arrowdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_container">
+            <div class="scroll_indicator">
+              <div class="dot_container">
+                <img src="./img/white-dot.png" alt="" />
+                <img src="./img/gray-dot.png" alt="" />
+                <img src="./img/gray-dot.png" alt="" />
+                <img src="./img/gray-dot.png" alt="" />
+              </div>
+            </div>
+            <div class="scroll_indicator_btn_container">
+              <button class="scroll_indicator_btn">
+                <img src="./img/left.png" alt="" />
+              </button>
+              <button class="scroll_indicator_btn">
+                <img src="./img/right.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- second secondary card -->
+
+        <div class="secondary-card-container">
+          <div class="sec-card-cont-text">
+            <img class="secondary_card_img" src="./img/balance.png" alt="" />
+            Scaled Concepts
+          </div>
+
+          <div class="secondary-card-wrapper">
+            <div class="sec-card">
+              <div class="header-icon">
+                <div class="header-container">
+                  <div class="right-header">
+                    <img class="img" src="./img/purple.png" alt="logo" />
+                    <h3 class="header-text">Nectar</h3>
+                  </div>
+                  <div class="header_content_second_card">
+                    <img src="./img/balance (1).png" alt="" />
+                    <p>Scaled Concepts</p>
+                  </div>
+                </div>
+              </div>
+
+              <img class="header_content_image" src="./img/pic2.png" alt="" />
+              <div class="sec-card-footer">
+                <div class="footer-links">
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="link1"
+                    target="_blank"
+                    >www.nectarsleep.com</a
+                  >
+                  <button
+                    href="https://www.nectarsleep.com"
+                    class="shopnow-btn"
+                    target="_blank"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+                <div class="footer-dropdown">
+                  <img src="./img/plus.png" alt="" />
+                  <p class="footer_dropdown_p">Save to Inspiration</p>
+                  <img src="./img/arrowdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="sec-card">
+              <div class="header-icon">
+                <div class="header-container">
+                  <div class="right-header">
+                    <img class="img" src="./img/nectar.png" alt="logo" />
+                    <h3 class="header-text">Nectar</h3>
+                  </div>
+                  <div class="header_content_second_card">
+                    <img src="./img/balance (1).png" alt="" />
+                    <p>Scaled Concepts</p>
+                  </div>
+                </div>
+              </div>
+
+              <img class="header_content_image" src="./img/pic3.png" alt="" />
+              <div class="sec-card-footer">
+                <div class="footer-links">
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="link1"
+                    target="_blank"
+                    >www.nectarsleep.com</a
+                  >
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="shopnow-btn"
+                    target="_blank"
+                    >Shop Now</a
+                  >
+                </div>
+                <div class="footer-dropdown">
+                  <img src="./img/plus.png" alt="" />
+                  <p class="footer_dropdown_p">Save to Inspiration</p>
+                  <img src="./img/arrowdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="sec-card">
+              <div class="header-icon">
+                <div class="header-container">
+                  <div class="right-header">
+                    <img class="img" src="./img/nectar.png" alt="logo" />
+                    <h3 class="header-text">Nectar</h3>
+                  </div>
+                  <div class="header_content_second_card">
+                    <img src="./img/balance (1).png" alt="" />
+                    <p>Scaled Concepts</p>
+                  </div>
+                </div>
+              </div>
+
+              <img class="header_content_image" src="./img/pic2.png" alt="" />
+              <div class="sec-card-footer">
+                <div class="footer-links">
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="link1"
+                    target="_blank"
+                    >www.nectarsleep.com</a
+                  >
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="shopnow-btn"
+                    target="_blank"
+                    >Shop Now</a
+                  >
+                </div>
+                <div class="footer-dropdown">
+                  <img src="./img/plus.png" alt="" />
+                  <p class="footer_dropdown_p">Save to Inspiration</p>
+                  <img src="./img/arrowdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="sec-card">
+              <div class="header-icon">
+                <div class="header-container">
+                  <div class="right-header">
+                    <img class="img" src="./img/nectar.png" alt="logo" />
+                    <h3 class="header-text">Nectar</h3>
+                  </div>
+                  <div class="header_content_second_card">
+                    <img src="./img/balance (1).png" alt="" />
+                    <p>Scaled Concepts</p>
+                  </div>
+                </div>
+              </div>
+
+              <img class="header_content_image" src="./img/img1.png" alt="" />
+              <div class="sec-card-footer">
+                <div class="footer-links">
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="link1"
+                    target="_blank"
+                    >www.nectarsleep.com</a
+                  >
+                  <a
+                    href="https://www.nectarsleep.com"
+                    class="shopnow-btn"
+                    target="_blank"
+                    >Shop Now</a
+                  >
+                </div>
+                <div class="footer-dropdown">
+                  <img src="./img/plus.png" alt="" />
+                  <p class="footer_dropdown_p">Save to Inspiration</p>
+                  <img src="./img/arrowdown.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_container">
+            <div class="scroll_indicator">
+              <div class="dot_container">
+                <img src="./img/white-dot.png" alt="" />
+                <img src="./img/gray-dot.png" alt="" />
+                <img src="./img/gray-dot.png" alt="" />
+                <img src="./img/gray-dot.png" alt="" />
+              </div>
+            </div>
+            <div class="scroll_indicator_btn_container">
+              <button class="scroll_indicator_btn">
+                <img src="./img/left.png" alt="" />
+              </button>
+              <button class="scroll_indicator_btn">
+                <img src="./img/right.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- carousel  -->
+      </div>
+    </div>
+
+    <script>
+      function toggleDropdown() {
+        const menu = document.getElementById('dropdown-menu');
+        const arrow = document.getElementById('dropdown-arrow');
+        menu.classList.toggle('hidden');
+        arrow.classList.toggle('rotate');
+      }
+    </script>
+  </body>
+</html>
